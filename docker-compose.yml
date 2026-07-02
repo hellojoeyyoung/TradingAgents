@@ -3,8 +3,10 @@ services:
     build: .
     env_file:
       - .env
+    user: root
     volumes:
       - tradingagents_data:/home/appuser/.tradingagents
+      - /mnt/c/Users/yj/Downloads/Documents:/output
     tty: true
     stdin_open: true
 
